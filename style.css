@@ -1,0 +1,105 @@
+:root {
+    --main-text: #171717;
+    --background-orange: #F69400;
+    --off-orange: #754700;
+    --dark-main-text: #D9D6D1;
+    --dark-background-orange: #181A1B;
+    --dark-off-orange: #FFCB7A;
+}
+
+/* Font imports. */
+@font-face {
+    font-family: Playfair Display;
+    src: url(/fonts/playfairdisplay.ttf); /* https://github.com/clauseggers/Playfair-Display */
+}
+
+/* Global things. */
+html {
+    background: var(--background-orange);
+}
+
+body {
+    color: var(--main-text);
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    max-width: 45%;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 90%;
+    }
+}
+
+blockquote {
+    padding-left: 15px;
+    border-left: 6px solid var(--off-orange);
+    font-style: italic;
+}
+post, p {
+    margin-top: 0px;
+}
+article, section {
+    margin-bottom: 24px;
+}
+
+/* Non-text styles. */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+hr {
+    border: 1px solid #171717;
+}
+
+/* Layout related stuff. */
+section {
+    font-size: 27px;
+    font-style: italic;
+    letter-spacing: -0.013em;
+    line-height: 1.4;
+    border-left-style: solid;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    border-left-width: 0px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+/* Fancy custom classes. */
+.homepage-title {
+    margin-top: 30vh;
+}
+@media screen and (max-width: 800px) {
+    .homepage-title {
+        margin-top: 30px;
+    }
+}
+.hidden-link {
+    text-decoration: none;
+    color: #171717;
+}
+.light-weight {
+    font-weight: 100;
+}
+#corner-picture {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    max-width: 30%;
+}
+.post-date {
+    text-align: center;
+    padding-bottom: 30px;
+}
