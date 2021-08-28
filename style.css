@@ -7,10 +7,9 @@
     --dark-off-orange: #FFCB7A;
 }
 
-/* Font imports. */
 @font-face {
-    font-family: Playfair Display;
-    src: url(/fonts/playfairdisplay.ttf); /* https://github.com/clauseggers/Playfair-Display */
+    font-family: "Space Mono";
+    src: url(/fonts/spacemono.ttf);
 }
 
 /* Global things. */
@@ -20,8 +19,8 @@ html {
 
 body {
     color: var(--main-text);
-    font-family: "Playfair Display", serif;
-    font-size: 2em;
+    font-family: "Space Mono", serif;
+    font-size: 1.5em;
     max-width: 45%;
     margin: auto;
 }
